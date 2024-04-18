@@ -692,6 +692,7 @@ section {
 .about-details-container {
   justify-content: center;
   flex-direction: column;
+  
 }
 
 .about-containers,
@@ -709,6 +710,17 @@ section {
   bottom: 2.5rem;
 }
 
+.details-container1 {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.1);
+  
+}
 .details-container {
   padding: 1.5rem;
   flex: 1;
@@ -717,6 +729,15 @@ section {
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.1);
+  
+}
+
+.details-container:hover {
+  cursor: pointer;
+  box-shadow: 15px 15px 30px #838282,
+             -15px -15px 30px #ffffff;
+  transition: 0.2s ease-in-out;
 }
 
 .section-container {
