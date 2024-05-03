@@ -9,6 +9,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: var(--secondary-color);
 }
 
 html {
@@ -16,9 +17,24 @@ html {
 }
 
 p {
-  color: rgb(85, 85, 85);
+  color: var(--third-color);
 }
 
+:root{
+  --primary-color: black;
+  --secondary-color: white;
+  --third-color : #808080;
+
+
+}
+
+.dark-theme{
+  --primary-color: white;
+  --secondary-color: black;
+  --third-color : rgb(182, 171, 171);
+  
+
+}
 
 
 /* The switch - the box around the slider */
@@ -102,6 +118,13 @@ p {
 }
 
 
+.dark{
+  display: flex;
+  justify-content: right;
+  margin-right: 2rem;
+}
+
+
 
 
 a,
@@ -118,7 +141,7 @@ a,
   background: #010101;
   padding: 1rem 2.5rem 1rem 3rem;
   border-radius: 5rem;
-  border: 2px solid #09090a;
+  border: 2px solid var(--primary-color);
   font-size: 1rem;
   line-height: 1em;
   letter-spacing: 0.075em;
@@ -437,13 +460,13 @@ nav {
 }
 
 a {
-  color: black;
+  color: var(--primary-color);
   text-decoration: none;
-  text-decoration-color: white;
+  text-decoration-color: var(--secondary-color);
 }
 
 a:hover {
-  color: grey;
+  color: rgb(113, 112, 112);
   text-decoration: underline;
   text-underline-offset: 1rem;
   text-decoration-color: rgb(181, 181, 181);
@@ -451,6 +474,7 @@ a:hover {
 
 .logo {
   font-size: 2rem;
+  color: var(--primary-color);
 }
 
 .logo:hover {
@@ -480,7 +504,7 @@ a:hover {
 .hamburger-icon span {
   width: 100%;
   height: 2px;
-  background-color: black;
+  background-color: var(--primary-color);
   transition: all 0.3 ease-in-out;
 }
 
@@ -488,7 +512,7 @@ a:hover {
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: white;
+  background-color: var(--secondary-color);
   width: fit-content;
   max-height: 0;
   overflow: hidden;
@@ -500,7 +524,7 @@ a:hover {
   padding: 10px;
   text-align: center;
   font-size: 1.5rem;
-  color: black;
+  color: var(--primary-color);
   text-decoration: none;
   transition: all 0.3 ease-in-out;
 }
@@ -590,6 +614,7 @@ section {
 .title {
   font-size: 3rem;
   text-align: center;
+  color: var(--primary-color);
 }
 
 #socials-container {
@@ -713,8 +738,6 @@ section {
 }
 
 
-
-
 .btn-container {
   display: flex;
   justify-content: center;
@@ -731,7 +754,7 @@ section {
 
 .btn-color-1,
 .btn-color-2 {
-  border: rgb(53, 53, 53) 0.1rem solid;
+  border: black 0.1rem solid;
 }
 
 .btn-color-1:hover,
@@ -741,12 +764,12 @@ section {
 
 .btn-color-1,
 .btn-color-2:hover {
-  background: rgb(53, 53, 53);
+  background: black;
   color: white;
 }
 
 .btn-color-1:hover {
-  background: rgb(0, 0, 0);
+  background: var(--primary-color);
 }
 
 .btn-color-2 {
@@ -754,7 +777,7 @@ section {
 }
 
 .btn-color-2:hover {
-  border: rgb(255, 255, 255) 0.1rem solid;
+  border: var(--secondary-color) 0.1rem solid;
 }
 
 .btn-container {
@@ -797,18 +820,7 @@ section {
 .details-container1 {
   padding: 1.5rem;
   flex: 1;
-  background: white;
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
-  text-align: center;
-  box-shadow: 0px 10px 20px rgba(0,0,0,0.1);
-  
-}
-.details-container {
-  padding: 1.5rem;
-  flex: 1;
-  background: white;
+  background: var(--secondary-color);
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
@@ -817,10 +829,25 @@ section {
   
 }
 
+.details-container1 .icon{
+  color: white  
+} 
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: var(--secondary-color);
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+  box-shadow: 0px 10px 20px var(--primary-color);
+  
+}
+
 .details-container:hover {
   cursor: pointer;
-  box-shadow: 15px 15px 30px #838282,
-             -15px -15px 30px #ffffff;
+  box-shadow: 5px 5px 10px #838282,
+             -5px -5px 10px var(--primary-color);
   transition: 0.2s ease-in-out;
 }
 
@@ -863,6 +890,10 @@ section {
   justify-content: space-around;
 }
 
+.article-container h3{
+  color: var(--primary-color);
+}
+
 article {
   display: flex;
   width: 10rem;
@@ -872,6 +903,7 @@ article {
 
 article .icon {
   cursor: default;
+  color: var(--primary-color);
 }
 
 
@@ -882,23 +914,23 @@ article .icon {
 
 .color-container {
   border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
+  background: var(--secondary-color);
 }
 
 .project-img {
   border-radius: 2rem;
   width: 90%;
   height: 90%;
-  border: 2px solid black;
+  border: 2px solid var(--primary-color);
 }
 
 .project-title {
   margin: 1rem;
-  color: black;
+  color: var(--primary-color);
 }
 
 .project-btn {
-  color: black;
+  color: var(--primary-color);
   border-color: rgb(163, 163, 163);
 }
 
@@ -951,4 +983,12 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+
+.parent-menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
 }

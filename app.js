@@ -4,3 +4,10 @@ function toggleMenu() {
     menu.classList.toggle("open");
     icon.classList.toggle("open");
   }
+
+
+var slider = document.querySelector("slider");
+
+slider.onclick = function(){
+    document.body.classList.toggle("dark-theme");
+  }
