@@ -8,6 +8,9 @@
   <title>My Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="mediaqueries.css" />
+  <link rel="stylesheet" href="boxicons.min.css">
+  <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
 
 <body>
@@ -24,10 +27,8 @@
       </div>
 
       <div class="dark">
-        <label class="switch" id="dark">
-          <input type="checkbox">
-          <span class="slider"></span>
-        </label>
+        <i class='bx bxs-moon'  id="toggleDark"></i>
+        <i class='bx bxs-sun' style='color:#ffffff'  id="toggleLight"></i>
       </div>
     </div>
   </nav>
@@ -35,10 +36,9 @@
     <div class="logo">Karan Singh</div>
     <div class="hamburger-menu parent-menu">
       <div class="dark">
-        <label class="switch" id="dark">
-          <input type="checkbox">
-          <span class="slider"></span>
-        </label>
+        <i class='bx bxs-moon'  id="toggleDark"></i>
+        <i class='bx bxs-sun' style='color:#ffffff' id="toggleLight" ></i>
+        
       </div>
       <div>
         <div class="hamburger-icon" onclick="toggleMenu()">
@@ -397,6 +397,7 @@
     <p>Copyright &#169; 2024 Karan Singh. All Rights Reserved.</p>
   </footer>
   <script src="app.js"></script>
+  <script src="https://unpkg.com/boxicons@2.1.3/dist/boxicons.js"></script>
 </body>
 
 </html>

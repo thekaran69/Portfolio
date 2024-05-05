@@ -28,6 +28,13 @@ p {
 
 }
 
+.light-theme{
+  --primary-color: black;
+  --secondary-color: white;
+  --third-color : #808080;
+
+}
+
 .dark-theme{
   --primary-color: white;
   --secondary-color: black;
@@ -123,9 +130,6 @@ p {
   justify-content: right;
   margin-right: 2rem;
 }
-
-
-
 
 a,
 .btn {

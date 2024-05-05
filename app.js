@@ -6,8 +6,15 @@ function toggleMenu() {
   }
 
 
-var slider = document.querySelector("slider");
+const togg = document.getElementById("toggleDark");
+const light  = document.getElementById("toggleLight");
+const body = document.querySelector('body');
 
-slider.onclick = function(){
+
+togg.addEventListener('click',function(){
     document.body.classList.toggle("dark-theme");
-  }
+  });
+
+light.addEventListener('onclick',function(){
+    document.body.classList.toggle("light-theme");
+  });
