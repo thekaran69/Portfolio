@@ -15,6 +15,6 @@ togg.addEventListener('click',function(){
     document.body.classList.toggle("dark-theme");
   });
 
-light.addEventListener('onclick',function(){
-    document.body.classList.toggle("light-theme");
+light.addEventListener('click',function(){
+    document.body.classList.to("light-theme");
   });
